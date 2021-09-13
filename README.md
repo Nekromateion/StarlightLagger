@@ -1,6 +1,6 @@
 # StarlightLagger
 
-Lags the lobby with invalid objects
+Lags the lobby with invalid objects, bypasses safety settings and eventually crashes everyone.
 
 # Reason
 
