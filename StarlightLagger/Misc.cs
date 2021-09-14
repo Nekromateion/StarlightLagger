@@ -1,20 +1,13 @@
 ﻿using MelonLoader;
-using System;
 using System.Collections;
-using UnityEngine;
+using System.Runtime.CompilerServices;
 
 namespace StarlightLagger
 {
     internal static class Misc
     {
-        public static IEnumerator DelayAction(float delay, Action action)
-        {
-            yield return new WaitForSeconds(delay);
-            action();
-            yield break;
-        }
-
-        public static void Start(this IEnumerator e)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        internal static void Start(this IEnumerator e)
         {
             MelonCoroutines.Start(e);
         }
